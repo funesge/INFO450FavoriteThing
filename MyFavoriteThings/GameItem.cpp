@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "GameItem.h"
 
+//Default GameItem Constructor
 GameItem::GameItem()
 {
 	gameTitle = "";
@@ -9,6 +10,7 @@ GameItem::GameItem()
 	favoriteCharacter = "";
 	gameRating = 0;
 }
+//constructor used to ge info from user
 int GameItem::getGameItem()
 {
 	cout << "What is the game title?: ";
@@ -32,6 +34,7 @@ int GameItem::getGameItem()
 	cin.ignore();
 	return 0;
 }
+//overloaded friend function to display favorite games to console
 ostream & operator<<(ostream &os, const GameItem &item)
 {
 	os << "**** Game ****" << endl;

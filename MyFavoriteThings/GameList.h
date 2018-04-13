@@ -2,6 +2,7 @@
 #include "stdafx.h"
 #include "GameItem.h"
 
+//GameList class with array
 class GameList
 {
 private:
