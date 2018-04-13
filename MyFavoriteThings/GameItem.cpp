@@ -30,6 +30,14 @@ int GameItem::getGameItem()
 		cin.ignore(256, '\n');//ignores 256 characters or until new line//
 		return ERROR1;
 	}
+	//checks if game rating is within range
+	else if (gameRating > 5 || gameRating < 1)
+	{
+		cout << "ERROR!! Game rating should be an integer between 1-5!!" << endl;
+		cin.clear();
+		cin.ignore();
+		return ERROR1;
+	}
 	cin.clear();
 	cin.ignore();
 	return 0;
