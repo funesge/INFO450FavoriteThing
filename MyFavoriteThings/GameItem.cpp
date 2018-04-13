@@ -10,7 +10,7 @@ GameItem::GameItem()
 	favoriteCharacter = "";
 	gameRating = 0;
 }
-//constructor used to ge info from user
+//used to get info from user
 int GameItem::getGameItem()
 {
 	cout << "What is the game title?: ";
