@@ -9,6 +9,7 @@ const int ERROR1 = 101;
 //GameItem class 
 class GameItem
 {
+private:
 	string gameTitle;
 	string gameType;
 	string gamePublisher;
@@ -18,7 +19,6 @@ class GameItem
 public:
 	GameItem();
 	int getGameItem();
-
 	//friend function used to display games to console
 	friend ostream & operator<<(ostream &os, const GameItem &item);
 

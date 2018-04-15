@@ -42,6 +42,7 @@ int GameItem::getGameItem()
 	cin.ignore();
 	return 0;
 }
+
 //overloaded friend function to display favorite games to console
 ostream & operator<<(ostream &os, const GameItem &item)
 {

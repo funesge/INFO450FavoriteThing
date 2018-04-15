@@ -8,7 +8,6 @@ GameList::GameList()
 {
 	listSize = 0;
 }
-
 //adds gameitem to the list for later display
 int GameList::addGameItem()
 {

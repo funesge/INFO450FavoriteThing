@@ -1,6 +1,7 @@
 #pragma once
 #include "stdafx.h"
 #include "GameItem.h"
+#include <string>
 
 //GameList class with array
 class GameList
