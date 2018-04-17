@@ -11,7 +11,10 @@ private:
 	int listSize;
 public:
 	GameList();
+	//function adds game to list if not duplicate
 	int addGameItem();
+	// function used to detect duplicate
 	bool duplicateDetection(GameItem game);
+	// function display list
 	void displayList();
 };

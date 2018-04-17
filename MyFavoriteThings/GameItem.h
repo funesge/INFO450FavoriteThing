@@ -18,6 +18,7 @@ private:
 
 public:
 	GameItem();
+	// string function will return game title for duplicate check
 	string getGameTitle();
 	int getGameItem();
 	//friend function used to display games to console

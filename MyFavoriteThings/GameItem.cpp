@@ -10,7 +10,7 @@ GameItem::GameItem()
 	favoriteCharacter = "";
 	gamePersonalRating = 0;
 }
-
+//returns game title for duplicate check
 string GameItem::getGameTitle()
 {
 	return gameTitle;

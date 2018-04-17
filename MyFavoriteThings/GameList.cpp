@@ -8,6 +8,7 @@ GameList::GameList()
 {
 	listSize = 0;
 }
+
 //bool detects duplicate game titles
 bool GameList::duplicateDetection(GameItem game)
 {
@@ -23,7 +24,6 @@ bool GameList::duplicateDetection(GameItem game)
 	}
 	return true;
 }
-
 
 //adds gameitem to the list for later display
 int GameList::addGameItem()
