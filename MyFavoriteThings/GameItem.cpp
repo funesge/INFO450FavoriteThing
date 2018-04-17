@@ -8,7 +8,12 @@ GameItem::GameItem()
 	gameType = "";
 	gamePublisher = "";
 	favoriteCharacter = "";
-	gameRating = 0;
+	gamePersonalRating = 0;
+}
+
+string GameItem::getGameTitle()
+{
+	return gameTitle;
 }
 //used to get info from user
 int GameItem::getGameItem()
@@ -22,7 +27,7 @@ int GameItem::getGameItem()
 	cout << "Who is your favorite character in the game?: ";
 	getline(cin, favoriteCharacter);
 	cout << "What is the game rating 1-5?: ";
-	cin >> gameRating;
+	cin >> gamePersonalRating;
 	if (!cin.good())
 	{
 		cout << "Failure to read game rating." << endl;
@@ -31,7 +36,7 @@ int GameItem::getGameItem()
 		return ERROR1;
 	}
 	//checks if game rating is within range
-	else if (gameRating > 5 || gameRating < 1)
+	else if (gamePersonalRating > 5 || gamePersonalRating < 1)
 	{
 		cout << "ERROR!! Game rating should be an integer between 1-5!!" << endl;
 		cin.clear();
@@ -51,7 +56,7 @@ ostream & operator<<(ostream &os, const GameItem &item)
 	os << "Game Type: " << item.gameType << endl;
 	os << "Game Publisher: " << item.gamePublisher << endl;
 	os << "Favorite Character: " << item.favoriteCharacter << endl;
-	os << "Game Rating: " << item.gameRating << endl;
+	os << "Game Rating: " << item.gamePersonalRating << endl;
 	return os;
 
 }

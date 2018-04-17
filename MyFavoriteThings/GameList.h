@@ -12,6 +12,6 @@ private:
 public:
 	GameList();
 	int addGameItem();
+	bool duplicateDetection(GameItem game);
 	void displayList();
 };
-

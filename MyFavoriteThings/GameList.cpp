@@ -8,11 +8,31 @@ GameList::GameList()
 {
 	listSize = 0;
 }
+//bool detects duplicate game titles
+bool GameList::duplicateDetection(GameItem game)
+{
+	int i = 0;
+	for (i = 0; i < listSize; i++)
+	{
+		if (game.getGameTitle() == gList[i].getGameTitle())
+		{
+			cout << "Duplicate detetected, wont add to list.";
+			cout << endl;
+			return false;
+		}
+	}
+	return true;
+}
+
+
 //adds gameitem to the list for later display
 int GameList::addGameItem()
 {
-	if (gList[listSize].getGameItem() == 0)// 0 returned for success
+	GameItem addGame;
+	addGame.getGameItem();
+	if (duplicateDetection(addGame))
 	{
+		gList[listSize] = addGame;
 		listSize++;
 		return 0;
 	}

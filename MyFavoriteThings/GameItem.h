@@ -14,10 +14,11 @@ private:
 	string gameType;
 	string gamePublisher;
 	string favoriteCharacter;
-	int gameRating;
+	int gamePersonalRating;
 
 public:
 	GameItem();
+	string getGameTitle();
 	int getGameItem();
 	//friend function used to display games to console
 	friend ostream & operator<<(ostream &os, const GameItem &item);
